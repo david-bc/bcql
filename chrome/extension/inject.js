@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Dock from 'react-dock';
+import $ from "jquery"
 
 class InjectApp extends Component {
   constructor(props) {
@@ -13,9 +13,12 @@ class InjectApp extends Component {
   };
 
   render() {
+    console.log("HELLO, " , $)
     return (
-      <div>
+      <div style={{ position:"relative"}}>
+        <div style={{ position:"fixed", bottom:"20px", left:"20px"}}>
         <h1>hello</h1>
+      </div>
       </div>
     );
   }
